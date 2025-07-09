@@ -8,4 +8,6 @@ import { ItemCertificadoComponent } from '../../_components/item-certificado/ite
   templateUrl: './certificados.component.html',
   styleUrl: './certificados.component.css',
 })
-export class CertificadosComponent {}
+export class CertificadosComponent {
+  
+}
