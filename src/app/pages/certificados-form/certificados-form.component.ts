@@ -16,10 +16,19 @@ export class CertificadosFormComponent {
   atividades: string[] = ['Angular', 'React'];
 
   campoInvalido(control: NgModel) {
-    return control.invalid && control.touched
+    return control.invalid && control.touched;
   }
 
   formValido() {
-    return this.atividades.length > 0 && this.nome.length > 0
+    return this.atividades.length > 0 && this.nome.length > 0;
+  }
+
+  adicionarAtividade() {
+    this.atividades.push(this.atividade);
+    this.atividade = "";
+  }
+
+  excluirAtividade(index: number) {
+    this.atividades.splice(index, 1);
   }
 }
