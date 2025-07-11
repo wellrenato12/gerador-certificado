@@ -11,4 +11,6 @@ import { RouterLink } from '@angular/router';
   templateUrl: './certificado.component.html',
   styleUrl: './certificado.component.css',
 })
-export class CertificadoComponent {}
+export class CertificadoComponent {
+  
+}
