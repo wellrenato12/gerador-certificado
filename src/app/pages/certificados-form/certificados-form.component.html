@@ -25,7 +25,12 @@
           class="form-control custom-input" placeholder="Atividade exercida" id="atividade" />
        
       </div>
-      <app-secondary-button (click)="adicionarAtividade()" [disabled]="atividade.length === 0" textoBotao="Adicionar" phClass="ph ph-plus" ></app-secondary-button>
+      <app-secondary-button 
+        (click)="adicionarAtividade()" 
+        [disabled]="!atividade || atividade.length === 0" 
+        textoBotao="Adicionar" 
+        phClass="ph ph-plus" 
+      />
     </div>
     <div class="atividade-group">
       <label class="form-label">Lista de atividades</label>

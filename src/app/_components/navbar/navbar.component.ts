@@ -1,3 +1,4 @@
+import { CommonModule } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { RouterLink, RouterModule } from '@angular/router';
 
@@ -6,6 +7,7 @@ import { RouterLink, RouterModule } from '@angular/router';
   imports: [
     RouterLink,
     RouterModule,
+    CommonModule,
   ],
   templateUrl: './navbar.component.html',
   styleUrl: './navbar.component.css'
